@@ -10,7 +10,7 @@ export default function ListaDejogadores() {
     useEffect(() => {
         const carregarjogadores = async () => {
             try {
-                const response = await axios.get('http://localhost:8080/jogador');
+                const response = await axios.get('https://nine1166-deplooy.onrender.com/usuarios');
                 setJogadores(response.data);
             } catch (error) {
                 alert('Erro ao buscar usuários');
